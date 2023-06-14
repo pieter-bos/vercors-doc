@@ -28,7 +28,7 @@ jobs:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
       - run: |
           cd pieter-bos.github.io
-          rm -r vercors-doc
+          rm -r vercors-doc || true
           mv ../vercors-doc .
           git config --global user.name "Pieter Bot"
           git config --global user.email "ghpages@pieterbos.me"
