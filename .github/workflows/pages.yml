@@ -20,4 +20,4 @@ jobs:
           # prefer breaking at an arbitrary point over outdated mdBook
           mdbook-version: 'latest'
       - run: mdbook build
-      - find
+      - run: find
