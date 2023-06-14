@@ -25,7 +25,7 @@ jobs:
         with:
           repository: pieter-bos/pieter-bos.github.io
           path: pieter-bos.github.io
-          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          ssh-key: ${{ secrets.SSH_DEPLOY_KEY }}
       - run: |
           cd pieter-bos.github.io
           rm -r vercors-doc || true
