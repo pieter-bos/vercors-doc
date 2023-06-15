@@ -2,9 +2,10 @@
 
 [Overview](./overview.md)
 
-- [Techical Setup]()
-	- [Language]()
-	- [Build System]()
+- [Techical Setup](./setup.md)
+	- [Workflow](./setup-workflow.md)
+	- [Language](./setup-language.md)
+	- [Build System](./setup-build-system.md)
 	- [Libraries]()
 		- [ANTLR]()
 		- [Logback]()
