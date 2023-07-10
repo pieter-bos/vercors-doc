@@ -19,3 +19,15 @@ case Plus(left, right) =>
 Here we coerce each `cond : Expr[G]` into a boolean, and do nothing with `effect`. For `Plus` we pick the first of two transformations that succeeds: either both `left` and `right` can be coerced with `int`, or both can be coerced with `rat`.
 
 Coercions serve two purposes: they check that the AST is well-typed, and can be used in `Rewriter`s to enact transformations on the AST.
+
+## Type checking
+The coercions in `CoercingRewriter` are run for every node during a `check` in the implementation of `DeclarationImpl` and `NodeFamilyImpl` (which together span all nodes). They use a special descendant of `CoercingRewriter` called `NopCoercingRewriter` that applies no transformtions along coercions.
+
+All nodes that contain expressions should have their coercions defined in `CoercingRewriter`. If the expression should be in a simple type (class), you can use `coerce(expression : Expr[Pre], type : Type[Pre])`. Shorthands for several common types are defined, such as `rat`, `bool` and `int`.
+
+If your node can be interpreted in multiple ways, determined by the type of its arguments, you can use the `firstOk` helper to select the first set of coercions that suceed on the arguments. Only if all alternatives fail an error is raised.
+
+## Transformations
+It is occasionally useful to implement transformation along the description of a coercion. Coercions are described by the node family `Coercion`. For example, coercing a `seq<int>` into a `seq<rational>` is described by `CoerceMapSeq(CoerceIntRat(), TInt(), TRational())`. Rewriters that extend `CoercingRewriter` have access to this coercion object by overriding `applyCoercion`. 
+
+One example of this behaviour is in the overloaded interpretation of `null`. In VerCors the array types are entirely separate from the class types. Thus, `null` can be coerced into either an array or a class type. In the rewriter that encodes arrays, `ImportArray`, we filter for usages of `null` for arrays by translating a `CoerceNullArray` coercion to the appropriate value for a null array.
