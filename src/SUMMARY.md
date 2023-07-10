@@ -15,6 +15,7 @@
 	- [References]()
 	- [Origins]()
 	- [Checking]()
+	- [Coercion](./col-coercion.md)
 	- [Pretty-Printing]()
 	- [Comparing]()
 	- [Serialization]()
