@@ -12,7 +12,7 @@
 
 - [Common Object Language](./col.md)
 	- [Nodes](./col-nodes.md)
-	- [References]()
+	- [References](./col-ref.md)
 	- [Origins]()
 	- [Checking]()
 	- [Coercion](./col-coercion.md)
