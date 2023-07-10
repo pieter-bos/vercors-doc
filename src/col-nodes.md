@@ -25,4 +25,5 @@ trait ExprImpl[G] { this: Expr[G] =>
 
 You may presume that the node is `check`ed before its type is queried, and may crash otherwise. The type of expressions is closely related to coercion.
 
-
+## Type
+The relations between types must be defined in `Types.leastCommonSuperType` and `CoercionUtils.getCoercion`.
