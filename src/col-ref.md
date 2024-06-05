@@ -44,7 +44,4 @@ There is no way to order the rewrites correctly here:
 
 The way we resolve this by making references lazy in general. We can still refer directly to declaration that we know of in context, such as temporary variables, by wrapping them in `DirectRef`. If not, we supply the computation that will resolve the reference to `LazyRef`. Importantly, this computation need not be valid immediately, it must be correct only after the `Rewriter`.
 
-By default, we store one-to-one succesors in a map. References then by default construct a `LazyRef` that looks up the successor in this map.
-
-## Implementation etc.
-TODO
+By default, we store one-to-one succesors in a map. References then by default construct a `LazyRef` that looks up the successor in this map. The actual mechanics of this are explained further in [Resolution](resolution.md) and [Succession](rewriting-succession.md)

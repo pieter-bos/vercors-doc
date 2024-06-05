@@ -13,14 +13,14 @@
 - [Common Object Language](./col.md)
 	- [Nodes](./col-nodes.md)
 	- [References](./col-ref.md)
-	- [Origins]()
+	- [Origins](./col-origin.md)
 	- [Checking]()
 	- [Coercion](./col-coercion.md)
 	- [Pretty-Printing]()
 	- [Comparing]()
 	- [Serialization]()
 
-- [Resolution]()
+- [Resolution](./resolution.md)
 
 - [Rewriting]()
 	- [Dispatch]()
