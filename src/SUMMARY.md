@@ -14,9 +14,9 @@
 	- [Nodes](./col-nodes.md)
 	- [References](./col-ref.md)
 	- [Origins](./col-origin.md)
-	- [Checking]()
+	- [Checking](./col-check.md)
 	- [Coercion](./col-coercion.md)
-	- [Pretty-Printing]()
+	- [Pretty-Printing](./col-pp.md)
 	- [Comparing]()
 	- [Serialization]()
 
