@@ -17,7 +17,7 @@
 	- [Checking](./col-check.md)
 	- [Coercion](./col-coercion.md)
 	- [Pretty-Printing](./col-pp.md)
-	- [Comparing]()
+	- [Comparing](./col-compare.md)
 	- [Serialization]()
 
 - [Resolution](./resolution.md)
