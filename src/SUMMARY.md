@@ -2,6 +2,11 @@
 
 [Overview](./overview.md)
 
+- [Quick reference guide](./overview.md)
+	- [Adding a Language]()
+	- [New specifications]()
+	- [New modes]()
+
 - [Techical Setup](./setup.md)
 	- [Workflow](./setup-workflow.md)
 	- [Language](./setup-language.md)
@@ -22,8 +27,8 @@
 
 - [Resolution](./resolution.md)
 
-- [Rewriting]()
-	- [Dispatch]()
+- [Rewriting](./rw.md)
+	- [Dispatch](./rw-dispatch.md)
 	- [Generations]()
 	- [Succesion]()
 	- [Blames]()

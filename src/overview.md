@@ -1,5 +1,13 @@
 # Overview
 
+Were you linked here, but not sure where to start? Maybe try a quick reference guide:
+
+* [Adding a new input language to VerCors](start-language.md)
+* [Add a new type of specification to VerCors](start-spec.md)
+* [Making VerCors do something other than verifying files](start-mode.md)
+
+## Introduction
+
 VerCors is a tool that tries to show programs to be correct. Correct may mean that the program finishes, that it does not crash, that it never throws an exception, or returns the correct result subject to some specification.
 
 VerCors accepts programs in a variety of languages. For each language (also: _frontend_) the grammar is altered slightly, maintaining compatiblity with the source langauge grammar, so that we may add various annotations to the program. These annotations aid in verifying the program by specifying behaviour about it. This is crucial in automating the proof of the program.
