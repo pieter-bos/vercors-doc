@@ -23,11 +23,12 @@
 	- [Coercion](./col-coercion.md)
 	- [Pretty-Printing](./col-pp.md)
 	- [Comparing](./col-compare.md)
-	- [Serialization]()
+	- [Serialization](./col-serialize.md)
 
 - [Resolution](./resolution.md)
 
 - [Rewriting](./rw.md)
+	- [Outline](./rw-outline.md)
 	- [Dispatch](./rw-dispatch.md)
 	- [Generations]()
 	- [Succesion]()
