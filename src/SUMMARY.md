@@ -30,7 +30,7 @@
 - [Rewriting](./rw.md)
 	- [Outline](./rw-outline.md)
 	- [Dispatch](./rw-dispatch.md)
-	- [Generations]()
+	- [Generations](./rw-generation.md)
 	- [Succesion]()
 	- [Blames]()
 	- [Nested Rewriters]()

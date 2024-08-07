@@ -68,3 +68,5 @@ override def dispatch(decl: Declaration[Pre]): Unit =
 Our friend `rewriteDefault` makes another appearence, which peels off the `ClassDeclaration` constructor, and recurses into its components. In the case that a `ClassDeclaration` contains further declarations, it will call `collect` again in a similar way. For example, an `InstanceMethod` is a `ClassDeclaration` and contains declarations of kind `Variable` for its arguments.
 
 After rewriting the declaration fully by opting to rewrite it in a one-to-one manner, it is declared to the buffer of `ClassDeclaration`s that we are currently collecting.
+
+Lastly we must always complete the match, which is done by also rewriting other declarations one-to-one, and using `allScopes` to find the correct scope to put the declaration in.
