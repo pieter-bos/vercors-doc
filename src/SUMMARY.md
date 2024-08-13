@@ -32,7 +32,7 @@
 	- [Dispatch](./rw-dispatch.md)
 	- [Generations](./rw-generation.md)
 	- [Succesion]()
-	- [Blames]()
+	- [Blames](./rw-blame.md)
 	- [Nested Rewriters]()
 	- [Substitution]()
 	- [RewriteHelper]()
