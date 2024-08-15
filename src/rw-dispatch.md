@@ -32,7 +32,9 @@ A new concept here is `rewriteDefault`: it is the mechanism used to peel off one
 
 A common mistake is to erroneously call `rewriteDefault` too often: when recursing into nodes yourself you should almost always call `dispatch`, which will decide to do with the sub-node.
 
-## Transforming declarations
+## Transforming Declarations
+
+_See also: [Succession](./rw-succession.md)_
 
 Declarations are special because it is not required that a declaration is transformed into a declaration. This is also represented in the signature of the `dispatch` method for `Declaration[_]`:
 

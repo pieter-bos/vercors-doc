@@ -31,7 +31,7 @@
 	- [Outline](./rw-outline.md)
 	- [Dispatch](./rw-dispatch.md)
 	- [Generations](./rw-generation.md)
-	- [Succesion]()
+	- [Succession](./rw-succession.md)
 	- [Blames](./rw-blame.md)
 	- [Nested Rewriters]()
 	- [Substitution]()
