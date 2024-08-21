@@ -36,7 +36,7 @@
 	- [Nested Rewriters](./rw-nested.md)
 	- [Substitution]()
 
-- [Backend and Errors]()
+- [Backend and Errors](./backend.md)
 	- [Program Translation]()
 	- [Error Translation]()
 
