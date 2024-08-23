@@ -37,8 +37,8 @@
 	- [Substitution]()
 
 - [Backend and Errors](./backend.md)
-	- [Program Translation]()
-	- [Error Translation]()
+	- [Program Translation](./backend-translation.md)
+	- [Error Translation](./backend-error.md)
 
 - [Utilities](./util.md)
 	- [Caching](./util-cache.md)

@@ -11,9 +11,11 @@ trait Backend[P] {
 
 The `Backend` trait presumes that the input program first must be translated to the internal language of the backend. The boolean returned by `submit` indicates whether there were any verification failures at all This is used because verification failures can potentially be spurious. That is: it is possible that with additional help or different random heuristics the proof might succeed. It is thus not safe to cache the result of a program verification when there are failures.
 
+Although VerCors is designed in such a way that we could connect to a new backend, our current backend is [Viper](http://viper.ethz.ch/tutorial/) and it is unlikely this will change anytime soon.
+
 ## Viper
 
-Our current backend is [Viper](http://viper.ethz.ch/tutorial/). It is an [intermediate language](https://github.com/viperproject/silver) and verification tool that accepts simple imperative programs with annotation in first-order permission-based separation logic. The input is straightforwardly translated to the Viper language, then submitted to one of Viper's two backends:
+Viper is an [intermediate language](https://github.com/viperproject/silver) and verification tool that accepts simple imperative programs with annotation in first-order permission-based separation logic. The input is straightforwardly translated to the Viper language, then submitted to one of Viper's two backends:
 
 * [Silicon](https://github.com/viperproject/silicon/), which uses a symbolic execution approach, and interrogates [z3](https://github.com/z3prover/z3). Silicon also has flags that enable it to talk to cvc5, but so far this seems of limited use.
 * [Carbon](https://github.com/viperproject/carbon), which uses verification condition generation, and submits a translated program to [Boogie](https://github.com/boogie-org/boogie).
