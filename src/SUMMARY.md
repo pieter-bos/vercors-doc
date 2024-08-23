@@ -11,9 +11,6 @@
 	- [Workflow](./setup-workflow.md)
 	- [Language](./setup-language.md)
 	- [Build System](./setup-build-system.md)
-	- [Libraries]()
-		- [ANTLR]()
-		- [Logback]()
 
 - [Common Object Language](./col.md)
 	- [Nodes](./col-nodes.md)
