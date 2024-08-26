@@ -3,9 +3,9 @@
 [Overview](./overview.md)
 
 - [Quick Reference Guide](./start.md)
-	- [Adding a Language]()
-	- [New specifications]()
-	- [New modes]()
+	- [Adding a Language](./start-language.md)
+	- [New specifications](./start-spec.md)
+	- [New modes](./start-mode.md)
 
 - [Techical Setup](./setup.md)
 	- [Workflow](./setup-workflow.md)
