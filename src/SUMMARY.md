@@ -2,7 +2,7 @@
 
 [Overview](./overview.md)
 
-- [Quick reference guide](./overview.md)
+- [Quick Reference Guide](./start.md)
 	- [Adding a Language]()
 	- [New specifications]()
 	- [New modes]()
@@ -31,7 +31,7 @@
 	- [Succession](./rw-succession.md)
 	- [Blames](./rw-blame.md)
 	- [Nested Rewriters](./rw-nested.md)
-	- [Substitution]()
+	- [Substitution](./rw-substitution.md)
 
 - [Backend and Errors](./backend.md)
 	- [Program Translation](./backend-translation.md)
@@ -40,4 +40,4 @@
 - [Utilities](./util.md)
 	- [Caching](./util-cache.md)
 	- [Profiling and Progress](./util-progress.md)
-	- [Importing]()
+	- [Importing](./util-import.md)
